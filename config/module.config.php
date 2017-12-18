@@ -28,10 +28,19 @@ return [
     'navigation' => [
         'default' => [
             [
-                'label' => 'Payment',
+                'label' => 'Payments',
                 'route' => 'payment',
             ]
         ]
+    ],
+    'translator' => [
+        'translation_file_patterns' => [
+            [
+                'type'     => 'gettext',
+                'base_dir' => __DIR__ . '/../language',
+                'pattern'  => '%s.mo',
+            ],
+        ],
     ],
     'controllers' => [
         'factories' => [
